@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Renty</title>
+        <link rel="stylesheet" href="./css/general.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/queries.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Sora:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link active">Buying</a></li>
+                        <li>
+                            <a href="#features-section" class="nav-link"
+                                >Renting</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#popular-section" class="nav-link"
+                                >Selling</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                   <a href="#"> <img src="./img/Logo.png" alt="Renty logo" /></a>
+                </div>
+                <nav class="info">
+                    <ul>
+                        <li>
+                            <a href="#benefits-section" class="nav-link"
+                                >About Us</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#our-service-section" class="nav-link"
+                                >Services</a
+                            >
+                        </li>
+                        <li><a href="#footer" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="nav-menu-btn">
+                    <ion-icon class="menu-nav-icon" name="menu"></ion-icon>
+                </button>
+                <div class="nav-mobile">
+                    <ul>
+                        <li>
+                            <a href="#" class="nav-link active">Buying</a>
+                        </li>
+                        <li>
+                            <a href="#features-section" class="nav-link">Renting</a>
+                        </li>
+                        <li>
+                            <a href="#popular-section" class="nav-link"
+                                >Selling</a>
+                        </li>
+                        <li>
+                            <a href="#benefits-section" class="nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#our-service-section" class="nav-link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container grid grid--2-cols">
+                <div class="box-text">
+                    <h1>Discover the ideal property here</h1>
+                    <p class="description">
+                        As soon as I had found a few properties that suited me,
+                        I was able to forget about how difficult it was to find
+                        a suitable home.
+                    </p>
+                    <div class="search-location">
+                        <div class="filter-conditions">
+                            <div class="filter-item">
+                                <ion-icon name="location-sharp"></ion-icon>
+                                <div class="location-text">
+                                    <p class="location-header">
+                                        Location
+                                        <ion-icon
+                                            name="chevron-down-sharp"
+                                        ></ion-icon>
+                                    </p>
+                                    <p>Yogyakarta</p>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <ion-icon name="home-sharp"></ion-icon>
+                                <div class="location-text">
+                                    <p class="location-header">
+                                        Type
+                                        <ion-icon
+                                            name="chevron-down-sharp"
+                                        ></ion-icon>
+                                    </p>
+                                    <p>Industrial Home</p>
+                                </div>
+                            </div>
+                            <a href="" class="btn btn--fill filter-item"">Search</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-img">
+                    <img
+                        class="main-header-img"
+                        src="./img/header-img.png"
+                        alt="header-img"
+                    />
+                    <div class="header-booking">
+                        <div class="header-booking-item">
+                            <img src="./img/header-booking1.png" alt="" />
+                            <div class="location-info">
+                                <p>
+                                    <ion-icon name="location-sharp"></ion-icon
+                                    >Jakarta Barat, Indonesia
+                                </p>
+                                <div class="room-info">
+                                    <p class="number-bed">
+                                        <ion-icon name="bed-outline"></ion-icon>
+                                        4 bed
+                                    </p>
+                                    <p class="room-size">
+                                        <ion-icon
+                                            name="expand-outline"
+                                        ></ion-icon>
+                                        10x10m
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="price">$5,200,000</p>
+                                    <a href="#" class="btn--sm btn--fill"
+                                        >Book Now</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-booking-item">
+                            <img src="./img/header-booking1.png" alt="" />
+                            <div class="location-info">
+                                <p>
+                                    <ion-icon name="location-sharp"></ion-icon
+                                    >Jakarta Barat, Indonesia
+                                </p>
+                                <div class="room-info">
+                                    <p class="number-bed">
+                                        <ion-icon name="bed-outline"></ion-icon>
+                                        4 bed
+                                    </p>
+                                    <p class="room-size">
+                                        <ion-icon
+                                            name="expand-outline"
+                                        ></ion-icon>
+                                        10x10m
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="price">$5,200,000</p>
+                                    <a href="#" class="btn--sm btn--fill"
+                                        >Book Now</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-booking-item">
+                            <img src="./img/header-booking1.png" alt="" />
+                            <div class="location-info">
+                                <p>
+                                    <ion-icon name="location-sharp"></ion-icon
+                                    >Jakarta Barat, Indonesia
+                                </p>
+                                <div class="room-info">
+                                    <p class="number-bed">
+                                        <ion-icon name="bed-outline"></ion-icon>
+                                        4 bed
+                                    </p>
+                                    <p class="room-size">
+                                        <ion-icon
+                                            name="expand-outline"
+                                        ></ion-icon>
+                                        10x10m
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="price">$5,200,000</p>
+                                    <a href="#" class="btn--sm btn--fill"
+                                        >Book Now</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-booking-item">
+                            <img src="./img/header-booking1.png" alt="" />
+                            <div class="location-info">
+                                <p>
+                                    <ion-icon name="location-sharp"></ion-icon
+                                    >Jakarta Barat, Indonesia
+                                </p>
+                                <div class="room-info">
+                                    <p class="number-bed">
+                                        <ion-icon name="bed-outline"></ion-icon>
+                                        4 bed
+                                    </p>
+                                    <p class="room-size">
+                                        <ion-icon
+                                            name="expand-outline"
+                                        ></ion-icon>
+                                        10x10m
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="price">$5,200,000</p>
+                                    <a href="#" class="btn--sm btn--fill"
+                                        >Book Now</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="figures">
+                    <ul>
+                        <li>
+                            <h3>280<span>+</span></h3>
+                            <p>Google Review</p>
+                        </li>
+                        <li>
+                            <h3>15<span>+</span></h3>
+                            <p>Years Experience</p>
+                        </li>
+                        <li>
+                            <h3>49<span>+</span></h3>
+                            <p>Awward Winning</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="features-section">
+                <div class="container">
+                    <div class="sub-title">Popular</div>
+                    <div class="features-header">
+                        <h2>Our Popular Residence</h2>
+                        <a href="#" class="explore-all">
+                            Explore All&nbsp;&nbsp;
+                            <svg
+                                width="40"
+                                height="23"
+                                viewBox="0 0 40 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1.5 11.5H38.5M38.5 11.5L30 3M38.5 11.5L30 20"
+                                    stroke="white"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="room-cards grid grid--3-cols">
+                        <div class="room-card">
+                            <img
+                                src="./img/room1.png"
+                                alt="room1"
+                                class="room-card-img"
+                            />
+                            <div class="location-info">
+                                <p>
+                                    <ion-icon name="location-sharp"></ion-icon
+                                    >Jakarta Barat, Indonesia
+                                </p>
+                                <div class="room-info">
+                                    <p class="number-bed">
+                                        <ion-icon name="bed-outline"></ion-icon>
+                                        4 bed
+                                    </p>
+                                    <p class="room-size">
+                                        <ion-icon
+                                            name="expand-outline"
+                                        ></ion-icon>
+                                        10x10m
+                                    </p>
+                                    <p class="room-area">
+                                        <ion-icon
+                                            name="square-outline"
+                                        ></ion-icon>
+                                        1900s
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn--lg btn--fill"
+                                        >Book Now</a
+                                    >
+                                    <p class="price">$5,200,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-card">
+                            <img
+                                src="./img/room2.png"
+                                alt="room2"
+                                class="room-card-img"
+                            />
+                            <div class="location-info">
+                                <p>
+                                    <ion-icon name="location-sharp"></ion-icon
+                                    >Jakarta Barat, London
+                                </p>
+                                <div class="room-info">
+                                    <p class="number-bed">
+                                        <ion-icon name="bed-outline"></ion-icon>
+                                        3 bed
+                                    </p>
+                                    <p class="room-size">
+                                        <ion-icon
+                                            name="expand-outline"
+                                        ></ion-icon>
+                                        9x9m
+                                    </p>
+                                    <p class="room-area">
+                                        <ion-icon
+                                            name="square-outline"
+                                        ></ion-icon>
+                                        1800s
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn--lg btn--outline"
+                                        >Book Now</a
+                                    >
+                                    <p class="price">$4,300,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-card">
+                            <img
+                                src="./img/room3.png"
+                                alt="room3"
+                                class="room-card-img"
+                            />
+                            <div class="location-info">
+                                <p>
+                                    <ion-icon name="location-sharp"></ion-icon
+                                    >Jakarta Barat, Japan
+                                </p>
+                                <div class="room-info">
+                                    <p class="number-bed">
+                                        <ion-icon name="bed-outline"></ion-icon>
+                                        6 bed
+                                    </p>
+                                    <p class="room-size">
+                                        <ion-icon
+                                            name="expand-outline"
+                                        ></ion-icon>
+                                        12x12m
+                                    </p>
+                                    <p class="room-area">
+                                        <ion-icon
+                                            name="square-outline"
+                                        ></ion-icon>
+                                        2400s
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn--lg btn--outline"
+                                        >Book Now</a
+                                    >
+                                    <p class="price">$7,900,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="explore-all2">
+                        Explore All&nbsp;&nbsp;
+                        <svg
+                            width="40"
+                            height="23"
+                            viewBox="0 0 40 23"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M1.5 11.5H38.5M38.5 11.5L30 3M38.5 11.5L30 20"
+                                stroke="white"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <section id="our-service-section">
+                <div class="container grid grid--2-cols">
+                    <div class="box-img">
+                        <img
+                            class="our-service-img"
+                            src="./img/our-service.png"
+                            alt="our-service-img"
+                        />
+                    </div>
+                    <div class="box-text">
+                        <p class="sub-title">Our Services</p>
+                        <h2>We make your comfort our top priority.</h2>
+                        <p class="description">
+                            In a free hour, when our power of choice is
+                            untrammelled and when nothing prevents our being
+                            able to do what we like best.
+                        </p>
+                        <div class="our-service-feature">
+                            <ul class="grid grid--2-cols">
+                                <li>
+                                    <svg
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 22 22"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M22 10.9922C17.6847 11.3842 15.2054 11.7448 13.6833 12.9366C11.8944 14.3321 11.4708 16.8881 11 22C10.5136 16.6999 10.0742 14.1597 8.1127 12.7954C6.59059 11.7292 4.12696 11.3842 0 11.0078C4.29957 10.6158 6.79458 10.2552 8.301 9.07912C10.1056 7.66786 10.5292 5.12758 11 0C11.4394 4.71989 11.8317 7.24448 13.291 8.70278C14.7504 10.1611 17.2924 10.5688 22 10.9922Z"
+                                            fill="#4573FD"
+                                        />
+                                    </svg>
+                                    Best market
+                                </li>
+                                <li>
+                                    <svg
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 22 22"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M22 10.9922C17.6847 11.3842 15.2054 11.7448 13.6833 12.9366C11.8944 14.3321 11.4708 16.8881 11 22C10.5136 16.6999 10.0742 14.1597 8.1127 12.7954C6.59059 11.7292 4.12696 11.3842 0 11.0078C4.29957 10.6158 6.79458 10.2552 8.301 9.07912C10.1056 7.66786 10.5292 5.12758 11 0C11.4394 4.71989 11.8317 7.24448 13.291 8.70278C14.7504 10.1611 17.2924 10.5688 22 10.9922Z"
+                                            fill="#4573FD"
+                                        />
+                                    </svg>
+                                    Unstable prices
+                                </li>
+                                <li>
+                                    <svg
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 22 22"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M22 10.9922C17.6847 11.3842 15.2054 11.7448 13.6833 12.9366C11.8944 14.3321 11.4708 16.8881 11 22C10.5136 16.6999 10.0742 14.1597 8.1127 12.7954C6.59059 11.7292 4.12696 11.3842 0 11.0078C4.29957 10.6158 6.79458 10.2552 8.301 9.07912C10.1056 7.66786 10.5292 5.12758 11 0C11.4394 4.71989 11.8317 7.24448 13.291 8.70278C14.7504 10.1611 17.2924 10.5688 22 10.9922Z"
+                                            fill="#4573FD"
+                                        />
+                                    </svg>
+                                    Top sell
+                                </li>
+                                <li>
+                                    <svg
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 22 22"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M22 10.9922C17.6847 11.3842 15.2054 11.7448 13.6833 12.9366C11.8944 14.3321 11.4708 16.8881 11 22C10.5136 16.6999 10.0742 14.1597 8.1127 12.7954C6.59059 11.7292 4.12696 11.3842 0 11.0078C4.29957 10.6158 6.79458 10.2552 8.301 9.07912C10.1056 7.66786 10.5292 5.12758 11 0C11.4394 4.71989 11.8317 7.24448 13.291 8.70278C14.7504 10.1611 17.2924 10.5688 22 10.9922Z"
+                                            fill="#4573FD"
+                                        />
+                                    </svg>
+                                    Security of data
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="benefits-section">
+                <div class="container grid grid--2-cols">
+                    <div class="box-text">
+                        <p class="sub-title">Benefits</p>
+                        <h2>Why Choose us</h2>
+                        <p class="description">
+                            Renty is a trustworthy developer in the real estate
+                            business. He has developed a reputation for trust
+                            and will have that reputation for years to come.
+                        </p>
+                        <ul class="why-choose-list">
+                            <li>
+                                <ion-icon name="filter"></ion-icon>Trusted
+                                Developer
+                            </li>
+                            <li>
+                                <ion-icon name="browsers"></ion-icon>No
+                                Commisions
+                            </li>
+                            <li>
+                                <ion-icon name="settings"></ion-icon>A safe and
+                                Trustworthy
+                            </li>
+                            <li>
+                                <ion-icon name="shield-checkmark"></ion-icon>Buy
+                                with Confidence
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-img">
+                        <div class="employee">
+                            <div>
+                                <p class="num-employee">70+ Employee</p>
+                                <p class="review-employee">
+                                    <ion-icon name="star"></ion-icon>
+                                    4.9 <span> (6.4k reviews) </span>
+                                </p>
+                            </div>
+                            <div class="employee-imgs">
+                                <img
+                                    src="./img/em1.png"
+                                    alt="em-img"
+                                    class="employee-img"
+                                />
+                                <img
+                                    src="./img/em2.png"
+                                    alt="em-img"
+                                    class="employee-img"
+                                />
+                                <img
+                                    src="./img/em3.png"
+                                    alt="em-img"
+                                    class="employee-img"
+                                />
+                                <img
+                                    src="./img/em4.png"
+                                    alt="em-img"
+                                    class="employee-img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="popular-section">
+                <div class="container">
+                    <p class="sub-title">Popular</p>
+                    <div class="popular-header">
+                        <div>
+                            <h2>Homes for Renty News And Stories</h2>
+                        </div>
+                        <div class="control-buttons">
+                            <button class="previous-btn">
+                                <ion-icon
+                                    name="chevron-back-outline"
+                                ></ion-icon>
+                            </button>
+                            <button class="next-btn">
+                                <ion-icon
+                                    name="chevron-forward-outline"
+                                ></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popular-cards">
+                        <div class="popular-card active">
+                            <img src="./img/popular1.png" alt="popular-img" />
+                            <div class="popular-card-text">
+                                <h4>Editorial House</h4>
+                                <p class="popular-des">
+                                    JL. Kencana oke. No2 universen
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popular-card">
+                            <img src="./img/popular2.png" alt="popular-img" />
+                            <div class="popular-card-text">
+                                <h4>Editorial House</h4>
+                                <p class="popular-des">
+                                    JL. Kencana oke. No2 universen
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popular-card">
+                            <img src="./img/popular3.png" alt="popular-img" />
+                            <div class="popular-card-text">
+                                <h4>Editorial House</h4>
+                                <p class="popular-des">
+                                    JL. Kencana oke. No2 universen
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popular-card">
+                            <img src="./img/popular4.png" alt="popular-img" />
+                            <div class="popular-card-text">
+                                <h4>Editorial House</h4>
+                                <p class="popular-des">
+                                    JL. Kencana oke. No2 universen
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popular-card">
+                            <img src="./img/popular2.png" alt="popular-img" />
+                            <div class="popular-card-text">
+                                <h4>Editorial House</h4>
+                                <p class="popular-des">
+                                    JL. Kencana oke. No2 universen
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popular-card">
+                            <img src="./img/popular3.png" alt="popular-img" />
+                            <div class="popular-card-text">
+                                <h4>Editorial House</h4>
+                                <p class="popular-des">
+                                    JL. Kencana oke. No2 universen
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popular-card">
+                            <img src="./img/popular4.png" alt="popular-img" />
+                            <div class="popular-card-text">
+                                <h4>Editorial House</h4>
+                                <p class="popular-des">
+                                    JL. Kencana oke. No2 universen
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="faq-section">
+                <div class="container">
+                    <div class="faq-header">
+                        <h2>FAQ’s – Frequently Asked Questions</h2>
+                        <p class="des">
+                            As you might imagine, real estate agents field quite
+                            a few questions every day. People are naturally
+                            curious, and it’s an agent’s job to guide.
+                        </p>
+                    </div>
+                    <div class="asks">
+                        <div class="ask open">
+                            <div class="ask-header">
+                                <h5>How can I build equity into my house?</h5>
+                                <button class="ask-btn">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <p class="answer">
+                                You can build equity in three ways. First (and
+                                easiest) is from market appreciation. Second,
+                                when making your monthly mortgage payment, try
+                                to send a little bit more.
+                            </p>
+                        </div>
+                        <div class="ask">
+                            <div class="ask-header">
+                                <h5>How big is an acre?</h5>
+                                <button class="ask-btn">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <p class="answer">
+                                You can build equity in three ways. First (and
+                                easiest) is from market appreciation. Second,
+                                when making your monthly mortgage payment, try
+                                to send a little bit more.
+                            </p>
+                        </div>
+                        <div class="ask">
+                            <div class="ask-header">
+                                <h5>What are closing costs?</h5>
+                                <button class="ask-btn">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <p class="answer">
+                                You can build equity in three ways. First (and
+                                easiest) is from market appreciation. Second,
+                                when making your monthly mortgage payment, try
+                                to send a little bit more.
+                            </p>
+                        </div>
+                        <div class="ask">
+                            <div class="ask-header">
+                                <h5>What is Title Insurance?</h5>
+                                <button class="ask-btn">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <p class="answer">
+                                You can build equity in three ways. First (and
+                                easiest) is from market appreciation. Second,
+                                when making your monthly mortgage payment, try
+                                to send a little bit more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="container grid">
+                <div class="more-info">
+                    <h5>More Renty</h5>
+                    <ul class="more-info-list">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Join Our Community</a></li>
+                        <li><a href="#">Agent support </a></li>
+                    </ul>
+                </div>
+                <div class="connected">
+                    <h5>Stay connected</h5>
+                    <p class="des">
+                        Sign up for inspiration for nourishing your body, mind
+                        and shine from inside. Added bonus: you'll get 10% off
+                        your first Renty order.
+                    </p>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email-input"
+                        placeholder="Email Address"
+                        autocomplete="off"
+                    />
+                    <div>
+                        <a href="#" class="btn btn--fill subcribe">Subscribe</a>
+                    </div>
+                </div>
+                <div  class="social-list">
+                    <ul>
+                        <li>
+                            <a href="#" class="hover">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="des">
+                        Renty Group is committed to ensuring digital
+                        accessibility for individuals with disabilities. We are
+                        continuously working to improve the accessibility of our
+                        web experience for everyone.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <p class="copyright">©uihut.com 2022. All Rights Reserved.</p>
+                <ul class="term">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Terms & Privacy</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

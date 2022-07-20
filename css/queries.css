@@ -1,0 +1,175 @@
+@media (max-width: 75em) {
+    .filter-conditions a {
+        width: 100%;
+        justify-content: center;
+    }
+    .filter-item {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 50em) {
+    #features-section,
+    #our-service-section,
+    #benefits-section,
+    #popular-section,
+    #faq-section,
+    footer {
+        padding-top: 0;
+    }
+    h1 {
+        font-size: 4.4rem;
+        line-height: 5.4rem;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    h5 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .sub-title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .btn--lg {
+        padding: 1.7rem 3rem;
+    }
+    .nav-menu-btn {
+        display: block;
+    }
+    header .container:nth-child(2) {
+        margin-top: 3.8rem;
+    }
+    header .main-nav,
+    header .info {
+        display: none;
+    }
+    header > div:last-child {
+        display: block;
+    }
+    header .box-img {
+        max-height: 41rem;
+        margin-top: 6rem;
+    }
+
+    .main-header-img {
+        min-height: 41rem;
+    }
+
+    .our-service-img,
+    #benefits-section .box-img {
+        max-height: 41rem;
+    }
+    .room-cards {
+        grid-template-columns: 1fr;
+        row-gap: 3.5rem;
+    }
+
+    .features-header a {
+        display: none;
+    }
+    .explore-all2 {
+        display: flex;
+    }
+
+    #our-service-section > .container {
+        grid-template-columns: 1fr;
+        row-gap: 6.8rem;
+    }
+
+    #our-service-section .box-text {
+        grid-row: 1/ 2;
+    }
+
+    .our-service-feature {
+        display: flex;
+        justify-content: center;
+    }
+
+    #benefits-section .container {
+        grid-template-columns: 1fr;
+        row-gap: 5.8rem;
+    }
+
+    .control-buttons {
+        display: none;
+    }
+
+    footer > div:first-child {
+        grid-template-columns: 1fr;
+        column-gap: 14rem;
+    }
+
+    .subcribe {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-list {
+        margin-top: 4rem;
+    }
+
+    .social-list .des {
+        margin: 4.2rem 0 3rem 0;
+    }
+
+    footer > div:last-child {
+        flex-direction: column;
+    }
+
+    .copyright {
+        margin-bottom: 1.8rem;
+    }
+
+    .term {
+        flex-direction: column;
+        gap: 1.8rem;
+        align-items: center;
+    }
+
+    .employee {
+        padding: 1.2rem;
+        left: 1.2rem;
+        bottom: 1.2rem;
+        right: 1.2rem;
+    }
+
+    .employee-img {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-left: -1.4rem;
+    }
+
+    .num-employee {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .review-employee {
+        font-size: 1.2rem;
+    }
+
+    .review-employee span {
+        font-size: 1rem;
+    }
+
+    .ask {
+        padding: 2.6rem 1.6rem;
+    }
+
+    .ask.open {
+        padding: 2.6rem 1.6rem;
+    }
+}
+
+@media (max-width: 23.125em) {
+    html {
+        font-size: 50%;
+    }
+}
