@@ -470,7 +470,7 @@ header .figures {
 
 #benefits-section .box-img {
     height: 70.1rem;
-    background: url(../img/benefits.png);
+    background: url(../img-compress/benefits.jpg);
     background-size: cover;
     border-radius: 28.4rem 1.4rem 1.4rem 1.4rem;
     border: 2rem solid var(--black-200);
