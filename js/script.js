@@ -64,11 +64,6 @@ const nextFuction = () => {
         left: cardSize * (idCardActive + 1),
         behavior: "smooth",
     });
-    if (idCardActive < popularCards.length - 1) {
-        popularCards[idCardActive].classList.remove("active");
-        popularCards[idCardActive + 1].classList.add("active");
-    }
-    console.log(idCardActive);
 };
 
 const previousFunction = () => {
@@ -80,50 +75,23 @@ const previousFunction = () => {
         left: cardSize * idCardActive - cardSize,
         behavior: "smooth",
     });
-    if (idCardActive > 0) {
-        popularCards[idCardActive].classList.remove("active");
-        popularCards[idCardActive - 1].classList.add("active");
-    }
-    console.log(idCardActive);
 };
 
 let oldScrollLeft = popularCardsContainer.scrollLeft;
-let deltalScrollLeft = 0;
-let deltalScrollRight = 0;
 
 popularCardsContainer.addEventListener("scroll", (e) => {
-    e.preventDefault();
-    let currentScrollLeft = e.currentTarget.scrollLeft;
-    if (currentScrollLeft > oldScrollLeft) {
-        deltalScrollLeft = 0;
-        deltalScrollRight += currentScrollLeft - oldScrollLeft;
-        oldScrollLeft = currentScrollLeft;
-        if (deltalScrollRight >= popularCards[0].offsetWidth) {
-            deltalScrollRight = 0;
-            console.log("right");
-            let idCardActive = [...popularCards].findIndex((popularCard) =>
-                popularCard.classList.contains("active")
-            );
-            if (idCardActive < popularCards.length) {
-                popularCards[idCardActive].classList.remove("active");
-                popularCards[idCardActive + 1].classList.add("active");
-            }
-        }
-    } else {
-        deltalScrollRight = 0;
-        deltalScrollLeft += oldScrollLeft - currentScrollLeft;
-        oldScrollLeft = currentScrollLeft;
-        if (deltalScrollLeft >= popularCards[0].offsetWidth) {
-            deltalScrollLeft = 0;
-            console.log("left");
-            let idCardActive = [...popularCards].findIndex((popularCard) =>
-                popularCard.classList.contains("active")
-            );
-            if (idCardActive > 0) {
-                popularCards[idCardActive].classList.remove("active");
-                popularCards[idCardActive - 1].classList.add("active");
-            }
-        }
+    let cardNeedActive = [...popularCards].find(
+        (popularCard) =>
+            popularCard.offsetLeft > popularCardsContainer.scrollLeft
+    );
+    let cardActive = [...popularCards].find((popularCard) =>
+        popularCard.classList.contains("active")
+    );
+    if (cardActive) {
+        cardActive.classList.remove("active");
+    }
+    if (cardNeedActive) {
+        cardNeedActive.classList.add("active");
     }
 });
 
