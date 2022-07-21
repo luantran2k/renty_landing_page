@@ -52,7 +52,9 @@ horizontalScroll(headerBookingContainer);
 // Popular control
 const nextBtn = document.querySelector(".next-btn");
 const previousBtn = document.querySelector(".previous-btn");
-const popularCards = document.querySelectorAll(".popular-card");
+const popularCards = document.querySelectorAll(
+    ".popular-card:not(.card-placeholder)"
+);
 const popularCardsContainer = document.querySelector(".popular-cards");
 
 const nextFuction = () => {
@@ -64,6 +66,10 @@ const nextFuction = () => {
         left: cardSize * (idCardActive + 1),
         behavior: "smooth",
     });
+
+    console.log(
+        `${popularCards[idCardActive].offsetLeft} / ${popularCardsContainer.scrollLeft}`
+    );
 };
 
 const previousFunction = () => {
@@ -84,6 +90,8 @@ popularCardsContainer.addEventListener("scroll", (e) => {
         (popularCard) =>
             popularCard.offsetLeft > popularCardsContainer.scrollLeft
     );
+    console.log([...popularCards].indexOf(cardNeedActive));
+    if ([...popularCards].indexOf(cardNeedActive) == -1) return;
     let cardActive = [...popularCards].find((popularCard) =>
         popularCard.classList.contains("active")
     );

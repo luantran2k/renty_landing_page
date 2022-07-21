@@ -166,6 +166,16 @@
     .ask.open {
         padding: 2.6rem 1.6rem;
     }
+
+    .card-placeholder {
+        display: none;
+    }
+}
+
+@media (max-width: 75em) {
+    .card-placeholder:last-child {
+        display: none;
+    }
 }
 
 @media (max-width: 23.125em) {
